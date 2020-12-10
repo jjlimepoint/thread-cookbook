@@ -8,7 +8,7 @@ class Chef
 
       def initialize(name, run_context=nil)
         super
-        @resource_name = :thread_test
+        @resource_name = :thread
         @action = "run"
         @allowed_actions <<  :run
         @thread_name = name
