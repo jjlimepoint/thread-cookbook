@@ -4,6 +4,7 @@ class Chef
     class Thread < Chef::Resource
 
       identity_attr :thread_name
+      provides :thread
 
       def initialize(name, run_context=nil)
         super
