@@ -3,6 +3,7 @@ class Chef
   class Resource
     class ThreadJoin < Chef::Resource
       
+      provides :thread_join
       identity_attr :lock_name
 
       def initialize(name, run_context=nil)
